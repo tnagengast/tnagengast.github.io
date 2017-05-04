@@ -10,6 +10,58 @@
         <link rel="stylesheet" href="/css/app.css">
 
         <title>Tom Nagengast</title>
+
+        <style type="text/css">
+            html, body {
+                height: 100vh;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .content {
+                height: 100vh;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                position: relative;
+            }
+            .mock {
+                text-align: center;
+            }
+            .links {
+                display: grid;
+                grid-auto-flow: row;
+                grid: 8rem auto / 1fr auto 1fr;
+                max-width: 80%;
+                margin: 0 auto;
+            }
+            .links > a {
+                color: #282828;
+                font-size: 2.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .links > a > img {
+                width: 2rem;
+            }
+            .logo {
+                margin-bottom: 30px;
+                width: 6rem;
+            }
+            .hi {
+                font-family: 'Bitter', serif;
+                font-size: 1rem;
+            }
+
+            @media (min-width: 700px) {
+                .links {
+                    max-width: 400px;
+                }
+                .hi {
+                    font-size: 2rem;
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="content" id="app">
