@@ -1,13 +1,13 @@
 // @import 'variables';
 
-// * {
-//     box-sizing: border-box;
-//     font-size: 1rem;
-//     font-style: normal;
-//     font-weight: normal;
+* {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
 //     font-family: 'Open Sans', sans-serif;
-//     text-decoration: none;
-// }
+    text-decoration: none;
+}
 
 // body {
 // 	padding-top: 3rem;
@@ -48,7 +48,6 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
 }
 .links > a > img {
     width: 2rem;
