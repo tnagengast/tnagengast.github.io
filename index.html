@@ -5,19 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="/dist/app.css">
+        <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/app.css">
 
         <title>Tom Nagengast</title>
     </head>
     <body>
-        <div id="app">
-            <div class="nav">
-                <router-link to='/' exact>Home</router-link>
-                <router-link to='/about'>About</router-link>
-            </div>
+        <div class="content" id="app">
+            <div class="mock">
+                <img class="logo" src="/images/logo.png">
+                <div class="hi">
+                    Hi! My name is Tom Nagengast.<br>
+                    I like to make things and solve problems.
+                </div>
 
-            <router-view></router-view>
+
+                <div class="links">
+                    <a href="https://www.behance.net/tnagengast" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    <a href="mailto:tnagengast@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    <a href="https://winewindow.io/" target="_blank"><img src="https://staging.winewindow.io/images/logo.svg"></a>
+                </div>
+            </div>
         </div>
 
         <script src="/dist/app.js"></script>
