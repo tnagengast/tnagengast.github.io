@@ -10,8 +10,13 @@
         <title>Tom Nagengast</title>
     </head>
     <body>
-        <div class="content">
-            Tom Nagengast
+        <div id="app">
+            <div class="nav">
+                <router-link to='/' exact>Home</router-link>
+                <router-link to='/about'>About</router-link>
+            </div>
+
+            <router-view></router-view>
         </div>
 
         <script src="/dist/app.js"></script>

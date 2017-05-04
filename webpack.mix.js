@@ -1,4 +1,4 @@
 let mix = require('laravel-mix');
 
-mix.sass('src/app.sass', 'dist')
-   .js('src/app.js', 'dist');
+mix.sass('src/scss/app.scss', 'dist')
+   .js('src/js/app.js', 'dist');

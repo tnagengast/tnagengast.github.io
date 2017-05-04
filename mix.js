@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,7 +71,7 @@
 /* 1 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \n* {\n  ^\n      Invalid CSS after \"* {\": expected \"}\", was \"{\"\n      in /Users/thomasnagengast/Code/Portfolio/src/app.sass (line 1, column 4)\n    at runLoaders (/Users/thomasnagengast/Code/Portfolio/node_modules/webpack/lib/NormalModule.js:192:19)\n    at /Users/thomasnagengast/Code/Portfolio/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/thomasnagengast/Code/Portfolio/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/thomasnagengast/Code/Portfolio/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Users/thomasnagengast/Code/Portfolio/node_modules/sass-loader/lib/loader.js:57:13)\n    at Object.<anonymous> (/Users/thomasnagengast/Code/Portfolio/node_modules/sass-loader/node_modules/async/dist/async.js:2243:31)\n    at Object.callback (/Users/thomasnagengast/Code/Portfolio/node_modules/sass-loader/node_modules/async/dist/async.js:906:16)\n    at options.error (/Users/thomasnagengast/Code/Portfolio/node_modules/node-sass/lib/index.js:294:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 2 */
@@ -80,7 +80,9 @@ throw new Error("Module build failed: ModuleBuildError: Module build failed: \n*
 
 
 /***/ }),
-/* 3 */
+/* 3 */,
+/* 4 */,
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
