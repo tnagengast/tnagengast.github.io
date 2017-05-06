@@ -5,28 +5,42 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="shortcut icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/tnagengast-github-io/Slope+Icon.png"/>
+
         <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/dist/css/app.css">
 
         <title>Tom Nagengast</title>
     </head>
-    <body>
         <div class="content" id="app">
-            <div class="mock">
-                <img class="logo" src="/dist/images/logo.png">
-                <div class="hi">
-                    Hi! My name is Tom Nagengast.<br>
-                    I like to make things and solve problems.
-                </div>
+            <div class="nav">
+                <img class="logo" src="https://s3-us-west-2.amazonaws.com/tnagengast-github-io/Slope+Logo+Full.png">
+                <router-link class="nav-item" to="/" exact>Projects</router-link>
+                <router-link class="nav-item" to="/about">About</router-link>
+            </div>
+            <!-- <router-view></router-view> -->
 
+            <div class="hi">
+                Hi! My name is Tom Nagengast.<br>
+                I like to make things and solve problems.
+            </div>
 
-                <div class="links">
-                    <a href="https://www.behance.net/tnagengast" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                    <a href="https://github.com/tnagengast" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="mailto:tnagengast@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                    <a href="https://winewindow.io/" target="_blank"><img src="https://staging.winewindow.io/images/logo.svg"></a>
-                </div>
+            <div class="links">
+                <a href="https://www.behance.net/tnagengast" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                <a href="https://winewindow.io/" target="_blank"><img src="https://staging.winewindow.io/images/logo.svg"></a>
+                <a href="mailto:tnagengast@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <a href="https://github.com/tnagengast" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://github.com/tnagengast" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="projects">
+                <div class="scaf project"></div>
+                <div class="scaf project"></div>
+                <div class="scaf project"></div>
+                <div class="scaf project"></div>
+                <div class="scaf project"></div>
+                <div class="scaf project"></div>
             </div>
         </div>
 

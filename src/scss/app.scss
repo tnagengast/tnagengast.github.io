@@ -7,62 +7,87 @@
     font-weight: normal;
 }
 
-html, body {
-    height: 100vh;
-    max-width: 800px;
-    margin: 0 auto;
-}
+html, body {}
 .content {
-    height: 100vh;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.mock {
-    text-align: center;
-}
-
-.links {
     display: grid;
-    grid-auto-flow: row;
-    grid: 8rem auto / 1fr 1fr 1fr 1fr;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
-}
-
-.links > a {
-    color: $black;
-    font-size: 2.2rem;
-    display: flex;
     justify-content: center;
+    grid:   [row1-start] "nav" 150px [row1-end]
+            [row2-start] "hi" 100px [row2-end]
+            [row3-start] "links" 100px [row3-end]
+            [row4-start] "projects" auto [row4-end]
+            / auto auto auto auto;
+}
+.nav {
+    grid-area: nav;
+    display: grid;
     align-items: center;
+    justify-items: end;
+    grid-template-columns: auto 100px 100px;
 }
-
-.links > a > img {
-    width: 2rem;
-}
-
-.logo {
-    margin-bottom: 30px;
-    width: 6rem;
-}
-
 .hi {
+    grid-area: hi;
+    text-align: center;
     font-family: 'Bitter', serif;
     font-size: 1rem;
+    align-self: center;
+}
+.links {
+    grid-area: links;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    justify-self: stretch;
+}
+.links > a {
+    color: #282828;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links > a > img {
+    width: 1.4rem;
+}
+.logo {
+    width: 4rem;
+    justify-self: start;
+}
+.scaf {
+    background: #EBEBEB;
+}
+.projects {
+    margin-top: 1.5rem;
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 200px);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 40px;
+}
+.project {
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 850px) {
     .links {
-        max-width: 400px;
+        max-width: 500px;
+        grid-template-columns: repeat(5, 100px);
+        justify-self: center;
     }
     .hi {
         font-size: 2rem;
+    }
+    .projects {
+        width: 800px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+    }
+    .links > a {
+        font-size: 2.2rem;
+    }
+    .links > a > img {
+        width: 2rem;
     }
 }
