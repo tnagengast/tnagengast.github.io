@@ -11,7 +11,13 @@
 .content {
     display: grid;
     justify-content: center;
-    grid: [row1-start] "nav" 150px [row1-end row2-start] "hi" 100px [row2-end row3-start] "links" 100px [row3-end row4-start] "projects" auto [row4-end] / auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 150px 100px 100px auto;
+    grid-template-areas:
+        "nav"
+        "hi"
+        "links"
+        "projects"
 }
 .nav {
     grid-area: nav;
