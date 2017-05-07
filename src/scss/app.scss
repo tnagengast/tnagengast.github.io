@@ -31,17 +31,36 @@ $desktop-width: 1024px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+i {
+    font: inherit;
+    font-style: italic;
+}
 a {
+    font: inherit !important;
     color: $black;
     &:hover, &:active {
         color: $blue;
     }
     &:visited {
         color: $black;
+
+    }
+}
+strong, b {
+    font-weight: 800 !important;
+}
+.visible-link {
+    color: $blue !important;
+
+    &:hover {
+        text-decoration: underline;
     }
 }
 html, body {
     // background-color: #e9ebee;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 .content {
     display: grid;
