@@ -15,7 +15,7 @@
 
         <div class="projects">
             <a class="project bajka" href="https://www.facebook.com/bajkawine"></a>
-            <a class="project winewindow" href="https://winewindow.io"></a>
+            <a class="project winewindow" href="/#/projects/winewindow"></a>
 			<a class="project couchsurfing" href="https://www.behance.net/gallery/13677425/Couchsurfing-Dashboard-Redesign"></a>
 			<a class="project viporbit" href="https://www.behance.net/gallery/13618989/VIPorbit-UI-Redesign"></a>
         </div>

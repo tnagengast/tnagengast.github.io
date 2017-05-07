@@ -17142,20 +17142,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -17613,7 +17599,7 @@ exports.push([module.i, "\n@mixin tablet-plus {\n@media (min-width: 1200px) {\n@
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(12)();
-exports.push([module.i, "\n@font-face {\n    font-family: \"detail-regular\";\n    src: url(\"/dist/fonts/TiemposTextWeb-Regular.eot\") format(\"eot\"),\n         url(\"/dist/fonts/TiemposTextWeb-Regular.woff\") format(\"woff\"),\n         url(\"/dist/fonts/TiemposTextWeb-Regular.ttf\") format(\"truetype\");\n}\n@font-face {\n    font-family: \"header-bold\";\n    src: url(\"/dist/fonts/circular-black.woff\") format(\"woff\"),\n         url(\"/dist/fonts/circular-black.ttf\") format(\"truetype\");\n}\n@font-face {\n    font-family: \"header-light\";\n    src: url(\"/dist/fonts/circular-book.woff\") format(\"woff\"),\n         url(\"/dist/fonts/circular-book.ttf\") format(\"truetype\");\n}\n.content[data-v-328b4994] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    width: 1000px;\n    margin: 0 auto;\n}\n.headline[data-v-328b4994] {\n    margin: 0;\n    font-size: 2.5rem;\n    font-family: 'header-bold', cursive;\n    color: #2b2b2b;\n}\n.sub-headline[data-v-328b4994] {\n    margin: 0;\n    font-size: 2.25rem;\n    font-family: 'header-light', cursive;\n    font-weight: 200px;\n    opacity: .7;\n    color: #767676;\n}\n.detail[data-v-328b4994] {\n    margin: 1.75rem 0;\n    padding-left: 10rem;\n\n    font-family: 'detail-regular', Georgia, serif;\n    color: #2b2b2b;\n    font-size: 1.15rem;\n    font-weight: 200;\n    line-height: 2;\n}\n.project-logo[data-v-328b4994] {\n    background-color: #F5F5F5;\n    width: 350px;\n    height: 200px;\n    overflow: hidden;\n    border-radius: 2px;\n    padding: 0 3rem;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 /***/ }),
 /* 63 */
@@ -31019,7 +31005,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _vm._v(" "), _c('a', {
     staticClass: "project winewindow",
     attrs: {
-      "href": "https://winewindow.io"
+      "href": "/#/projects/winewindow"
     }
   }), _vm._v(" "), _c('a', {
     staticClass: "project couchsurfing",
@@ -31141,38 +31127,10 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "content"
-  }, [_c('div', {
-    staticClass: "headline"
-  }, [_vm._v("Wining and Dining")]), _vm._v(" "), _c('div', {
-    staticClass: "sub-headline"
-  }, [_vm._v("Finding Stories In Wine.")]), _vm._v(" "), _c('div', {
-    staticClass: "detail"
-  }, [_vm._v("This was one of the first really great projects that I produced when I was consulting in Lisbon.")]), _vm._v(" "), _c('div', {
-    staticClass: "headline"
-  }, [_vm._v("Discover")]), _vm._v(" "), _c('div', {
-    staticClass: "detail"
-  }, [_vm._v("When I went to tackle this, I first when through and captured every view with states that I wanted to focus on. I preferred to go a little overboard here to really get the lay of the land and understand where the strengths and weaknesse from my perspective were.")]), _vm._v(" "), _c('div', {
-    staticClass: "headline"
-  }, [_vm._v("Explore")]), _vm._v(" "), _c('div', {
-    staticClass: "detail"
-  }, [_vm._v("Once I had everything laid out in from of me, it was time to dig in!")]), _vm._v(" "), _c('div', {
-    staticClass: "headline"
-  }, [_vm._v("Test")]), _vm._v(" "), _c('div', {
-    staticClass: "detail"
-  }, [_vm._v("This is apparently a tough part for some people to do but I love it. You finally get to see what actually works and makes sense to people who aren't in this design world all day.")]), _vm._v(" "), _c('div', {
-    staticClass: "headline"
-  }, [_vm._v("Listen")]), _vm._v(" "), _c('div', {
-    staticClass: "detail"
-  }, [_vm._v("After testing, it was time to shut my mouth and listen. I like to prod but if someone can think of a descriptor, I found it was way more helpful to be patient and wait until the pulled out their thesaurus and found it than to jump in and try to help them find the work")]), _vm._v(" "), _c('div', {
-    staticClass: "headline"
-  }, [_vm._v("Iterate")]), _vm._v(" "), _c('div', {
-    staticClass: "detail"
-  }, [_vm._v("I only ran a few iterations on my test findings for this project, but given the time constraints I think I was able to deliver a solid product. Even better, I had a happy client! The best source of repeat business and more travelling.")])])
-}]}
+  }, [_vm._v("\n    hi\n")])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
