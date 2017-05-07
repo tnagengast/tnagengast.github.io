@@ -1,5 +1,28 @@
 @import 'variables';
 
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin grid-centered {
+    display: grid;
+}
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin tablet-plus {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
 * {
     box-sizing: border-box;
     font-size: 1rem;
@@ -8,16 +31,27 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+a {
+    &:hover, &:active {
+        color: $blue;
+    }
+    &:visited {
+        color: $black;
+    }
+}
+html, body {
+    // background-color: #e9ebee;
+}
 .content {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: 150px 100px 100px auto;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 100px 100px auto 50px;
     grid-template-areas:
-        "nav"
         "hi"
         "links"
         "projects"
+        "footer"
 }
 .nav {
     grid-area: nav;
@@ -25,19 +59,38 @@
     align-items: center;
     justify-items: end;
     grid-template-columns: auto 100px 100px;
+    margin: 2rem auto;
+    width: 100%;
+
+    @include tablet-plus {
+        width: 800px;
+    }
 }
-.hi {
+.hi, .hi div {
     grid-area: hi;
     text-align: center;
     font-family: 'Bitter', serif;
     font-size: 1rem;
     align-self: center;
+
+    @include tablet-plus {
+        font-size: 2rem;
+    }
+}
+.about {
+
 }
 .links {
     grid-area: links;
     display: grid;
     grid-template-columns: repeat(5, 20%);
     justify-self: stretch;
+
+    @include tablet-plus {
+        max-width: 500px;
+        grid-template-columns: repeat(5, 100px);
+        justify-self: center;
+    }
 }
 .links > a {
     color: #282828;
@@ -45,9 +98,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablet-plus { //.links > a {
+        font-size: 2.2rem;
+    }
 }
 .links > a > img {
     width: 1.4rem;
+    @include tablet-plus { //.links > a > img {
+        width: 2rem;
+    }
 }
 .logo {
     width: 4rem;
@@ -62,35 +122,38 @@
     grid-area: projects;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 200px);
+    grid-template-rows: repeat(4, 200px);
     align-items: center;
     justify-items: center;
     grid-gap: 40px;
+
+    @include tablet-plus {
+        width: 800px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 200px);
+    }
 }
 .project {
     border-radius: 2px;
     height: 100%;
     width: 100%;
 }
-
-@media (min-width: 850px) {
-    .links {
-        max-width: 500px;
-        grid-template-columns: repeat(5, 100px);
-        justify-self: center;
-    }
-    .hi {
-        font-size: 2rem;
-    }
-    .projects {
-        width: 800px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 200px);
-    }
-    .links > a {
-        font-size: 2.2rem;
-    }
-    .links > a > img {
-        width: 2rem;
-    }
+.whoami {
+    grid-area: projects;
+}
+.couchsurfing {
+    background: url("https://mir-s3-cdn-cf.behance.net/projects/404/13677425.54846e7e5be7b.png") center no-repeat #D44A0C;
+    background-size: 250px;
+}
+.viporbit {
+    background: url("https://mir-s3-cdn-cf.behance.net/projects/404/13618989.548458dd0474e.png") center no-repeat #F5F5F5;
+    background-size: 250px;
+}
+.bajka {
+    background: url("https://scontent-sjc2-1.xx.fbcdn.net/v/t31.0-8/12493423_1632234310372384_4190792118853821615_o.jpg?oh=4d790f53fa17118b297a84aae61a0dc1&oe=59B64347") center no-repeat #F5F5F5;
+    background-size: 500px;
+}
+.winewindow {
+    background: url("https://s3-us-west-2.amazonaws.com/tnagengast-github-io/projects-wine+window.png") center no-repeat #292929;
+    background-size: 250px;
 }

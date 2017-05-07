@@ -15,35 +15,13 @@
         <title>Tom Nagengast</title>
     </head>
     <body>
-        <div class="content" id="app">
+        <div class="app" id="app">
             <div class="nav">
                 <img class="logo" src="https://s3-us-west-2.amazonaws.com/tnagengast-github-io/Slope+Logo+Full.png">
                 <router-link class="nav-item" to="/" exact>Projects</router-link>
                 <router-link class="nav-item" to="/about">About</router-link>
             </div>
-            <!-- <router-view></router-view> -->
-
-            <div class="hi">
-                Hi! My name is Tom Nagengast.<br>
-                I like to make things and solve problems.
-            </div>
-
-            <div class="links">
-                <a href="https://www.behance.net/tnagengast"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                <a href="https://winewindow.io/"><img src="https://staging.winewindow.io/images/logo.svg"></a>
-                <a href="mailto:tnagengast@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                <a href="https://github.com/tnagengast"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/thomas-nagengast-ab5b5a4/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-
-            <div class="projects">
-                <div class="scaf project"></div>
-                <div class="scaf project"></div>
-                <div class="scaf project"></div>
-                <div class="scaf project"></div>
-                <div class="scaf project"></div>
-                <div class="scaf project"></div>
-            </div>
+            <router-view></router-view>
         </div>
 
         <script src="/js/app.js"></script>
