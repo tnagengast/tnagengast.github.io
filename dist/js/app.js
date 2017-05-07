@@ -2901,7 +2901,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "hi"
   }, [_c('div', [_vm._v("Hi! My name is Tom Nagengast.")]), _vm._v(" "), _c('div', [_vm._v("I like to make things and solve problems.")])]), _vm._v(" "), _c('div', {
     staticClass: "about"
-  }, [_vm._v("\n\t\t\tI was born and raised in California. I'm a Winemaker / Data Scientist / web jack-of-all-trades and currently live in San Luis Obispo working at MINDBODY.\n\t\t\t"), _c('br'), _c('br'), _vm._v("\n\t\t\tThanks for visiting.\n        ")]), _vm._v(" "), _c('div', {
+  }, [_vm._v("\n        I was born and raised in California. I'm a Winemaker / Data Scientist / web jack-of-all-trades and currently live in San Luis Obispo working at MINDBODY.\n        "), _c('br'), _c('br'), _vm._v("\n        Thanks for visiting.\n    ")]), _vm._v(" "), _c('div', {
     staticClass: "links"
   }, [_c('a', {
     attrs: {
@@ -12719,7 +12719,7 @@ module.exports = function() {
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)();
-exports.push([module.i, "\n.content[data-v-14859326] {\n    -ms-grid-columns: (auto)[1];\n        grid-template-columns: repeat(1, auto);\n    -ms-grid-rows: 100px 300px 100px auto 50px;\n        grid-template-rows: 100px 300px 100px auto 50px;\n    grid-template-areas:\n        \"hi\"\n        \"about\"\n        \"links\"\n        \"projects\"\n        \"footer\"\n}\n.about[data-v-14859326] {\n    grid-area: about;\n    width: 800px;\n    font-family: 'Bitter', serif;\n    font-size: 2rem;\n    text-align: center;\n    -ms-flex-item-align: center;\n        -ms-grid-row-align: center;\n        align-self: center;\n}\n", ""]);
+exports.push([module.i, "\n@mixin tablet-plus {\n@media (min-width: 1200px) {\n@content;\n}\n}\n.content[data-v-14859326] {\n    -ms-grid-columns: (auto)[1];\n        grid-template-columns: repeat(1, auto);\n    -ms-grid-rows: 100px 100px 100px auto 50px;\n        grid-template-rows: 100px 100px 100px auto 50px;\n    grid-template-areas:\n        \"hi\"\n        \"about\"\n        \"links\"\n        \"projects\"\n        \"footer\";\n}\n@media (min-width: 768px) {\n.content[data-v-14859326] {\n        -ms-grid-rows: 100px 300px 100px auto 50px;\n            grid-template-rows: 100px 300px 100px auto 50px;\n}\n}\n.about[data-v-14859326] {\n    grid-area: about;\n}\n", ""]);
 
 /***/ }),
 /* 21 */

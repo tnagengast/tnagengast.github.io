@@ -5,9 +5,9 @@
             <div>I like to make things and solve problems.</div>
         </div>
         <div class="about">
-			I was born and raised in California. I'm a Winemaker / Data Scientist / web jack-of-all-trades and currently live in San Luis Obispo working at MINDBODY.
-			<br><br>
-			Thanks for visiting.
+            I was born and raised in California. I'm a Winemaker / Data Scientist / web jack-of-all-trades and currently live in San Luis Obispo working at MINDBODY.
+            <br><br>
+            Thanks for visiting.
         </div>
 
         <div class="links">
@@ -21,8 +21,8 @@
         <div class="projects">
             <a class="project bajka" href="https://www.facebook.com/bajkawine"></a>
             <a class="project winewindow" href="https://winewindow.io"></a>
-			<a class="project couchsurfing" href="https://www.behance.net/gallery/13677425/Couchsurfing-Dashboard-Redesign"></a>
-			<a class="project viporbit" href="https://www.behance.net/gallery/13618989/VIPorbit-UI-Redesign"></a>
+            <a class="project couchsurfing" href="https://www.behance.net/gallery/13677425/Couchsurfing-Dashboard-Redesign"></a>
+            <a class="project viporbit" href="https://www.behance.net/gallery/13618989/VIPorbit-UI-Redesign"></a>
         </div>
     </div>
 </template>
@@ -36,23 +36,30 @@
 </script>
 
 <style scoped>
+
+@mixin tablet-plus {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
 .content {
     grid-template-columns: repeat(1, auto);
-    grid-template-rows: 100px 300px 100px auto 50px;
+    grid-template-rows: 100px 100px 100px auto 50px;
     grid-template-areas:
         "hi"
         "about"
         "links"
         "projects"
-        "footer"
+        "footer";
 }
 
+@media (min-width: 768px) {
+    .content {
+        grid-template-rows: 100px 300px 100px auto 50px;
+    }
+}
 .about {
     grid-area: about;
-    width: 800px;
-    font-family: 'Bitter', serif;
-    font-size: 2rem;
-    text-align: center;
-    align-self: center;
 }
 </style>
